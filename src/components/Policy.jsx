@@ -38,7 +38,7 @@ const Policy = () => {
       <p class='text-gray-400 font-semibold text-sm pt-2'>
         Restricted countries: United Arab Emirates and Vietnam
       </p>
-      <div class='flex justify-center space-x-2'>
+      <div class='flex justify-center space-x-2 m-2'>
         <a
           href=''
           rel='noreferrer'

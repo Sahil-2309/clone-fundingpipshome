@@ -10,9 +10,11 @@ import PricingTables from './components/PricingTables'
 import Cta from './components/Cta'
 import Footer from './components/Footer'
 import Tail from './components/Tail'
+import logo from './assets/logo.png'
+
 const App = () => {
   return (
-    <div>
+    <div className='relative'>
       <Navbar />
       <Hero />
       <Brand />
@@ -24,6 +26,11 @@ const App = () => {
       <Cta />
       <Tail />
       <Footer />
+      {/* <img
+        src={logo}
+        alt=''
+        className='fixed bottom-4 left-4 text-blue-500 text-xl z-10'
+      /> */}
     </div>
   )
 }
