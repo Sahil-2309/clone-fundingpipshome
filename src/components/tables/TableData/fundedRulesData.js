@@ -3,7 +3,7 @@ const fundedRulesData = [
     title: 'Trading Period',
     description:
       "We believe in constant adaptability and development when it comes to trading, therefore we do not have a minimum or maximum limit on trading days. You may take all the time you need. Remember, there's no need to rush. Take your time and trade at your own pace.",
-    percentage: null,
+    percentage: '∞',
     example: null,
   },
   {
@@ -25,14 +25,14 @@ const fundedRulesData = [
     title: 'Profit Target',
     description:
       'We do not have profit targets on the master account. You can request your profits on a 5 trading days basis directly from the beginning.',
-    percentage: null,
+    percentage: '-',
     example: null,
   },
   {
     title: 'Leverage',
     description:
       'Trade with up to 1:100 leverage with RAW Spreads. There is a different leverage applied for different types of financial instruments. FX 1:100 , Crypto 1:2, Indices 1:20, Metals 1:30 & Energies 1:10',
-    percentage: null,
+    percentage: '1:100',
     example: null,
   },
 ]

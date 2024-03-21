@@ -9,17 +9,17 @@ function AccordionItem({ heading, content }) {
 
   return (
     <div>
-      <h2 id='accordion-arrow-icon-heading-3'>
+      <h2>
         <button
           type='button'
           onClick={toggleAccordion}
           aria-expanded={isOpen ? 'true' : 'false'}
-          aria-controls='accordion-arrow-icon-body-3'
+          className='flex gap-2'
         >
-          <span>{heading}</span>
           <svg
-            data-accordion-icon
-            className={`w-3 h-3 rotate-180 shrink-0 ${isOpen ? 'rotate' : ''}`}
+            className={`w-3 h-3 transition-transform transform ${
+              isOpen ? '' : 'rotate-180'
+            }`}
             aria-hidden='true'
             xmlns='http://www.w3.org/2000/svg'
             fill='none'
@@ -33,13 +33,10 @@ function AccordionItem({ heading, content }) {
               d='M9 5 5 1 1 5'
             />
           </svg>
+          <span> {heading}</span>
         </button>
       </h2>
-      <div
-        id='accordion-arrow-icon-body-3'
-        className={`p-5 ${isOpen ? 'block' : 'hidden'}`}
-        aria-labelledby='accordion-arrow-icon-heading-3'
-      >
+      <div className={`p-5 ${isOpen ? 'block' : 'hidden'}`}>
         <p className='mb-2 text-gray-500 dark:text-gray-400'>{content}</p>
       </div>
     </div>

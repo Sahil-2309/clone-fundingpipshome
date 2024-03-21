@@ -57,12 +57,12 @@ const EvaluationStage = () => {
           <tbody>
             {tradingRulesData.map((rule, index) => (
               <tr key={index} style={trStyles}>
-                <th>
+                <td>
                   <AccordionItem
                     heading={rule.title}
                     content={rule.description}
                   />
-                </th>
+                </td>
                 <td>{rule.student}</td>
                 <td>{rule.practitioner}</td>
               </tr>
