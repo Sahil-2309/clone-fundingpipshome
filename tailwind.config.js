@@ -8,7 +8,7 @@ module.exports = {
         primary: '#1e1e1e',
       },
       fontFamily: {
-        sans: ['Helvetica', 'Arial', 'sans-serif'],
+        sans: ['Inter var', 'Poppins', 'Helvetica', 'Arial', 'sans-serif'],
         serif: ['Georgia', 'serif'],
       },
       spacing: {

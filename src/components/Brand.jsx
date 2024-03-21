@@ -3,7 +3,7 @@ import yahoo from '../assets/yahoo_finance.png'
 
 const Brand = () => {
   return (
-    <div className='grid grid-cols-3 gap-4 p-[16px]'>
+    <div className='grid grid-cols-3 gap-4 p-[16px] mb-8'>
       <div className='flex justify-center'>
         <div
           style={{

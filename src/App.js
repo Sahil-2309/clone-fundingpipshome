@@ -4,7 +4,9 @@ import Hero from './components/Hero'
 import Brand from './components/Brand'
 import Dashboard2 from './components/Dashboard2'
 import Platform from './components/Platform'
-import Pricing from './components/Pricing'
+import TradingRules from './components/TradingRules'
+import PricingBanner from './components/PricingBanner'
+import PricingTables from './components/PricingTables'
 const App = () => {
   return (
     <div>
@@ -13,7 +15,9 @@ const App = () => {
       <Brand />
       <Dashboard2 />
       <Platform />
-      <Pricing />
+      <PricingBanner />
+      <PricingTables />
+      <TradingRules />
     </div>
   )
 }
