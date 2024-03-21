@@ -7,6 +7,9 @@ import Platform from './components/Platform'
 import TradingRules from './components/TradingRules'
 import PricingBanner from './components/PricingBanner'
 import PricingTables from './components/PricingTables'
+import Cta from './components/Cta'
+import Footer from './components/Footer'
+import Tail from './components/Tail'
 const App = () => {
   return (
     <div>
@@ -18,6 +21,9 @@ const App = () => {
       <PricingBanner />
       <PricingTables />
       <TradingRules />
+      <Cta />
+      <Tail />
+      <Footer />
     </div>
   )
 }

@@ -14,8 +14,8 @@ const FundedStage = () => {
   }
 
   return (
-    <div className='m-5'>
-      <div className='col-span-3 px-4 '>
+    <div>
+      <div className='col-span-3 px-4 mr-5'>
         <div className='flex justify-center items-center gap-4'>
           <hr className='border-[1px] w-full border-gray-400' />
           <h4 className='text-bold text-3xl font-bold text-gray-500 dark:text-gray-300 m-6 text-center'>
