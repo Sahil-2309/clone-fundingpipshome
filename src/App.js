@@ -26,11 +26,6 @@ const App = () => {
       <Cta />
       <Tail />
       <Footer />
-      {/* <img
-        src={logo}
-        alt=''
-        className='fixed bottom-4 left-4 text-blue-500 text-xl z-10'
-      /> */}
     </div>
   )
 }
