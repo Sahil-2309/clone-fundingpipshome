@@ -22,31 +22,22 @@ const EvaluationStage = () => {
         </h4>
         <hr className='border-[1px] w-full border-gray-400' />
       </div>
-      <div className='overflow-x-auto'>
-        <table
-          className='table bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl '
-          style={{ borderCollapse: 'collapse' }}
-        >
+      <div>
+        <table className='table  ' style={{ borderCollapse: 'collapse' }}>
           <thead>
             <tr style={{ border: 'none' }}>
               <th></th>
               <th
+                className='px-4 py-2 text-left text-base md:text-lg lg:text-xl'
                 style={{
-                  fontSize: '24px',
-                  lineHeight: '32px',
-                  textAlign: 'start',
-                  letterSpacing: 'normal',
                   color: '#f5cd7c',
                 }}
               >
                 Student
               </th>
               <th
+                className='px-4 py-2 text-left text-base md:text-lg lg:text-xl'
                 style={{
-                  fontSize: '24px',
-                  lineHeight: '32px',
-                  textAlign: 'start',
-                  letterSpacing: 'normal',
                   color: '#52b696',
                 }}
               >
@@ -54,7 +45,7 @@ const EvaluationStage = () => {
               </th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className='bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl'>
             {tradingRulesData.map((rule, index) => (
               <tr key={index} style={trStyles}>
                 <td>
