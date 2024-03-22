@@ -10,15 +10,6 @@ const Navbar = () => {
       style={{ display: 'flex', justifyContent: 'space-between' }}
     >
       <div className='navbar-start'>
-        <a className='text-4xl font-bold flex items-center ml-3'>
-          <img
-            src={logo}
-            alt='logo'
-            className='w-10 h-10 filter brightness-0'
-            style={{ filter: 'invert(100%)' }}
-          />
-          <span className='text-white ml-2'>FUNDING PIPS</span>
-        </a>
         <div className='dropdown'>
           <div tabIndex={0} role='button' className='btn btn-ghost lg:hidden'>
             <svg
@@ -109,6 +100,15 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
+        <a className='text-4xl font-bold flex items-center ml-3'>
+          <img
+            src={logo}
+            alt='logo'
+            className='w-10 h-10 filter brightness-0'
+            style={{ filter: 'invert(100%)' }}
+          />
+          <span className='text-white ml-2'>FUNDING PIPS</span>
+        </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
         <ul
