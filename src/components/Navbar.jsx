@@ -112,7 +112,8 @@ const Navbar = () => {
             className='w-10 h-10 filter brightness-0'
             style={{ filter: 'invert(100%)' }}
           />
-          <span className='text-white ml-2'>FUNDING PIPS</span>
+          <span className='text-white ml-2 '
+            style={{fontSize:'15px'}}>FUNDING PIPS</span>
         </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
