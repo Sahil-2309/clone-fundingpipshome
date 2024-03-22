@@ -6,8 +6,13 @@ import Buybutton from './Buybutton'
 const Navbar = () => {
   return (
     <div
-      className={`navbar bg-opacity-20 backdrop-filter backdrop-blur-lg bg-base-200 p- pl-3 fixed top-0 z-50`}
-      style={{ display: 'flex', justifyContent: 'space-between' }}
+      className={`navbar bg-opacity-20 backdrop-filter backdrop-blur-lg bg-base-200 p- pl-3 fixed top-0`}
+      style={{
+        display: 'flex',
+        justifyContent: 'space-between',
+        zIndex: '1000',
+        position: '',
+      }}
     >
       <div className='navbar-start'>
         <div className='dropdown'>

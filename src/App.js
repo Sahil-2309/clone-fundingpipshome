@@ -11,7 +11,7 @@ import Cta from './components/Cta'
 import Footer from './components/Footer'
 import Tail from './components/Tail'
 import logo from './assets/logo.png'
-
+import Cards from './components/Cards'
 const App = () => {
   return (
     <div className='relative'>
@@ -19,6 +19,7 @@ const App = () => {
       <Hero />
       <Brand />
       <Dashboard2 />
+      <Cards />
       <Platform />
       <PricingBanner />
       <PricingTables />
