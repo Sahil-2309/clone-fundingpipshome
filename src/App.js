@@ -14,7 +14,7 @@ import logo from './assets/logo.png'
 import Cards from './components/Cards'
 const App = () => {
   return (
-    <div className='relative'>
+    <div className='main overflow-x-hidden'>
       <Navbar />
       <Hero />
       <Brand />

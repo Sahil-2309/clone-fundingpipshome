@@ -22,8 +22,8 @@ const EvaluationStage = () => {
         </h4>
         <hr className='border-[1px] w-full border-gray-400' />
       </div>
-      <div>
-        <table className='table  ' style={{ borderCollapse: 'collapse' }}>
+      <div className='overflow-x-auto'>
+        <table className='table w-full' style={{ borderCollapse: 'collapse' }}>
           <thead>
             <tr style={{ border: 'none' }}>
               <th></th>

@@ -5,7 +5,7 @@ import FundedStage from './tables/FundedStage'
 
 const PricingTables = () => {
   return (
-    <div className='container m-4'>
+    <div className='container m-4 overflow-x-hidden'>
       <div className='flex flex-col md:flex-row'>
         <div className='w-full md:w-2/3 pr-4'>
           <EvaluationStage />
