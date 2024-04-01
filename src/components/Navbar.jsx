@@ -115,14 +115,9 @@ const Navbar = () => {
             className='w-10 h-10 filter brightness-0'
             style={isDarkMode ? {} : { filter: 'invert(100%)' }}
           />
-<<<<<<< HEAD
           <span className=' ml-2' style={{ color: textColor }}>
             FUNDING PIPS
           </span>
-=======
-          <span className='text-white ml-2 '
-            style={{fontSize:'15px'}}>FUNDING PIPS</span>
->>>>>>> 532124af6ec4f0caf7a9e30941eddf917dbcc9e2
         </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
