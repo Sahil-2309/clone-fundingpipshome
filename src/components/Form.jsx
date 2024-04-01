@@ -1,11 +1,21 @@
 import React from 'react'
-
+import { useTheme } from './ThemeContext'
 const Form = () => {
+  const { isDarkMode } = useTheme()
+  const colortext = isDarkMode ? 'black' : 'white'
+  const background = isDarkMode ? '#e5e7eb' : '#303030'
+  const background2 = isDarkMode ? '#f9fafb' : '#1e1e1e'
   return (
     <div>
-      <div className='flex md:flex-row flex-col justify-between gap-4 items-center bg-white bg-opacity-10 backdrop-filter dark:bg-dark-light rounded-3xl px-4 py-7'>
+      <div
+        className='flex md:flex-row flex-col justify-between gap-4 items-center rounded-3xl px-4 py-7'
+        style={{ backgroundColor: background }}
+      >
         <div className='md:w-1/2 w-full'>
-          <label className='bg-grey dark:text-white text-xl'>
+          <label
+            className=' text-xl'
+            style={{ color: colortext, fontWeight: 'bold' }}
+          >
             Newsletter signup
           </label>
         </div>
@@ -17,13 +27,13 @@ const Form = () => {
               className='block w-full p-4 text-sm text-dark border border-gray-300 rounded-lg bg-white focus:ring-blue-500 focus:border-blue-500 dark:bg-dark dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
               placeholder='Enter your email'
               required
-              style={{ backgroundColor: '#1e1e1e' }}
+              style={{ backgroundColor: background2 }}
             />
             <button className='text-bg-grey-700 absolute right-2.5 bottom-2.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'>
               <svg
                 xmlns='http://www.w3.org/2000/svg'
                 viewBox='0 0 24 24'
-                fill='currentColor'
+                fill={isDarkMode ? 'white' : 'black'}
                 aria-hidden='true'
                 className='w-4 h-4'
               >

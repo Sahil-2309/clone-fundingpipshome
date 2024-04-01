@@ -1,26 +1,38 @@
 import React from 'react'
 import AccordionItem from '../AccordionItem'
 import tradingRulesData from './TableData/tradingRulesData'
-
+import { useTheme } from '../ThemeContext'
 const EvaluationStage = () => {
+  const { isDarkMode } = useTheme()
+  const colortext = isDarkMode ? 'black' : '#d1d5db'
   const trStyles = {
     fontSize: '16px',
     lineHeight: '24px',
     textAlign: 'left',
     letterSpacing: 'normal',
     border: 'none',
-    color: '#d1d5db',
-    fontweight: 'normal',
+    color: colortext,
+    fontweight: '700',
   }
-
+  const colorhead = isDarkMode ? '#6b7280' : '#d1d5db'
+  const colorTable = isDarkMode ? '#f9fafb' : '#353535'
   return (
     <div className='col-span-3 px-4 '>
       <div className='flex justify-center items-center gap-4'>
-        <hr className='border-[1px] w-full border-gray-400' />
-        <h4 className='text-bold text-3xl font-bold text-gray-500 dark:text-gray-300 m-6 text-center'>
+        <hr
+          className='border-[1px] w-full'
+          style={{ borderColor: colorhead }}
+        />
+        <h4
+          className='text-bold text-3xl font-bold  m-6 text-center'
+          style={{ color: colorhead }}
+        >
           Evaluation stage
         </h4>
-        <hr className='border-[1px] w-full border-gray-400' />
+        <hr
+          className='border-[1px] w-full '
+          style={{ borderColor: colorhead }}
+        />
       </div>
       <div className='overflow-x-auto'>
         <table className='table w-full' style={{ borderCollapse: 'collapse' }}>
@@ -45,7 +57,10 @@ const EvaluationStage = () => {
               </th>
             </tr>
           </thead>
-          <tbody className='bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-3xl'>
+          <tbody
+            className=' rounded-3xl'
+            style={{ backgroundColor: colorTable }}
+          >
             {tradingRulesData.map((rule, index) => (
               <tr key={index} style={trStyles}>
                 <td>

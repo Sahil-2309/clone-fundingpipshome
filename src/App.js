@@ -10,11 +10,15 @@ import PricingTables from './components/PricingTables'
 import Cta from './components/Cta'
 import Footer from './components/Footer'
 import Tail from './components/Tail'
-import logo from './assets/logo.png'
 import Cards from './components/Cards'
+import { useTheme } from './components/ThemeContext'
 const App = () => {
+  const { isDarkMode } = useTheme()
   return (
-    <div className='main overflow-x-hidden'>
+    <div
+      className='main overflow-x-hidden'
+      style={isDarkMode ? {} : { background: '#1e1e1e' }}
+    >
       <Navbar />
       <Hero />
       <Brand />

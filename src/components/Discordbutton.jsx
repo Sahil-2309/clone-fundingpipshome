@@ -1,6 +1,8 @@
 import React from 'react'
-
+import { useTheme } from './ThemeContext'
 const DiscordButton = () => {
+  const { isDarkMode } = useTheme()
+
   return (
     <div>
       <a

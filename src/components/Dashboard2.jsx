@@ -1,7 +1,9 @@
 import React from 'react'
 import Dashboard from '../assets/hero2-dashboard.png'
-
+import { useTheme } from './ThemeContext'
 const Dashboard2 = () => {
+  const { isDarkMode } = useTheme()
+  const textColor = isDarkMode ? 'black' : 'white'
   return (
     <div className='h-full'>
       <div className='w-full container mx-auto px-4'>
@@ -10,18 +12,27 @@ const Dashboard2 = () => {
             <img
               alt='dashboard2'
               src={Dashboard}
-              style={{ filter: 'invert(85%)' }}
+              style={isDarkMode ? {} : { filter: 'invert(85%)' }}
               className='w-full'
             />
           </div>
           <div className='md:order-2'>
-            <h3 className='font-bold text-[2rem] text-left dark:text-white capitalize'>
+            <h3
+              className='font-bold text-[2rem] text-left capitalize'
+              style={{ color: textColor }}
+            >
               Built by traders for traders.
             </h3>
-            <h3 className='font-bold text-[2rem] text-left dark:text-white capitalize'>
+            <h3
+              className='font-bold text-[2rem] text-left  capitalize'
+              style={{ color: textColor }}
+            >
               Your trading ideas, our risk.
             </h3>
-            <p className='font-light text-[15px] text-left dark:text-gray-400 mt-8'>
+            <p
+              className='font-light text-[15px] text-left dark:text-gray-400 mt-8'
+              style={isDarkMode ? { color: textColor } : {}}
+            >
               Funding Pips believes that traders go through three main levels in
               their careers, Student - Practitioner - Master, with FP's in
               house-built two phases evaluation (Student - Practitioner) and
@@ -31,12 +42,7 @@ const Dashboard2 = () => {
             </p>
           </div>
           <div className='block md:hidden'>
-            <img
-              alt='dashboard2'
-              src={Dashboard}
-              style={{ filter: 'invert(85%)' }}
-              className='w-full'
-            />
+            <img alt='dashboard2' src={Dashboard} className='w-full' />
           </div>
         </div>
       </div>

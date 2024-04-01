@@ -5,7 +5,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#1e1e1e',
+        // primary: '#1e1e1e',
       },
       fontFamily: {
         sans: ['Inter var', 'Poppins', 'Helvetica', 'Arial', 'sans-serif'],
@@ -27,7 +27,6 @@ module.exports = {
       {
         mytheme: {
           primary: '#9ca3af',
-          background: '#1e1e1e',
         },
       },
     ],

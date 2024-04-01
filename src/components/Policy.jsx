@@ -1,6 +1,9 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import { useTheme } from './ThemeContext'
 const Policy = () => {
+  const { isDarkMode } = useTheme()
+  const colortext = isDarkMode ? 'black' : 'white'
   return (
     <div className='m-5'>
       <div className='navbar-start'>
@@ -9,9 +12,11 @@ const Policy = () => {
             src={logo}
             alt='logo'
             className='w-10 h-10 filter brightness-0'
-            style={{ filter: 'invert(100%)' }}
+            style={isDarkMode ? {} : { filter: 'invert(100%)' }}
           />
-          <span className='text-white ml-2'>FUNDING PIPS</span>
+          <span className='ml-2' style={{ color: colortext }}>
+            FUNDING PIPS
+          </span>
         </a>
       </div>
       <p class='text-gray-400 text-sm pt-6'>

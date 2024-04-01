@@ -1,6 +1,7 @@
 import React from 'react'
-
+import { useTheme } from './ThemeContext'
 const TradingRules = () => {
+  const { isDarkMode } = useTheme()
   return (
     <div
       className='rounded-2xl px-3 py-5  m-5 mt-8'
@@ -46,7 +47,7 @@ const TradingRules = () => {
           <img
             src='https://fundingpips.com/static/ce9b9780ecf4c36b8bf6d0c858e5ee13/c1096/tradingobjectives.webp'
             alt=''
-            style={{ filter: 'invert(85%)' }}
+            style={isDarkMode ? {} : { filter: 'invert(85%)' }}
           />
         </div>
       </div>

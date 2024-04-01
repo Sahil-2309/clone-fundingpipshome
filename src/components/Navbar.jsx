@@ -3,7 +3,10 @@ import { useEffect } from 'react'
 import Themebutton from './Themebutton'
 import logo from '../assets/logo.png'
 import Buybutton from './Buybutton'
+import { useTheme } from './ThemeContext'
 const Navbar = () => {
+  const { isDarkMode } = useTheme()
+  const textColor = isDarkMode ? 'black' : 'white'
   return (
     <div
       className={`navbar bg-opacity-20 backdrop-filter backdrop-blur-lg bg-base-200 p- pl-3 fixed top-0`}
@@ -110,9 +113,11 @@ const Navbar = () => {
             src={logo}
             alt='logo'
             className='w-10 h-10 filter brightness-0'
-            style={{ filter: 'invert(100%)' }}
+            style={isDarkMode ? {} : { filter: 'invert(100%)' }}
           />
-          <span className='text-white ml-2'>FUNDING PIPS</span>
+          <span className=' ml-2' style={{ color: textColor }}>
+            FUNDING PIPS
+          </span>
         </a>
       </div>
       <div className='navbar-center hidden lg:flex'>
